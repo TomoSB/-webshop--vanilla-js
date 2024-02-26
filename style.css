@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   box-sizing: border-box;
@@ -21,7 +22,7 @@ body .nav-container .container-left {
   height: 3em;
 }
 body .nav-container .hamburger {
-  display: block;
+  display: none;
   width: 3em;
 }
 body .nav-container .hamburger .span-1 {
@@ -44,6 +45,11 @@ body .nav-container .hamburger .span-3 {
   height: 10px;
   display: block;
   margin: 4px;
+}
+@media (max-width: 600px) {
+  body .nav-container .hamburger {
+    display: block;
+  }
 }
 body .nav-container .hamburger-rotate {
   transform: rotate(90deg);
@@ -98,10 +104,15 @@ body .mobile-menu a {
   margin: 3%;
   width: 50%;
 }
+body main video {
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
 body main .home-content {
   position: absolute;
   z-index: 1;
-  top: 15%;
+  top: 30%;
   left: 50%;
   text-align: center;
   color: white;
@@ -124,7 +135,26 @@ body main .home-content a {
 }
 body main h1 {
   text-align: center;
+  text-decoration: underline;
   margin: 1em;
+}
+body main .total {
+  z-index: 7;
+  width: 50%; /* Promijenite širinu na 25% */
+  height: 80%; /* Postavite visinu na 100% */
+  background-color: #0adf38;
+  position: fixed;
+  padding: 5%;
+  left: 0;
+  right: 0;
+  margin-top: 3%;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-direction: column;
+}
+body main .total h3 {
+  text-decoration: underline;
 }
 body main .featured-products-container {
   display: flex;
@@ -150,15 +180,15 @@ body main .featured-products-container .featured-product img {
 body main .featured-products-container .featured-product h3 {
   display: inline;
 }
-body main .featured-products-container .featured-product .fa-cart-shopping {
+body main .featured-products-container .featured-product .add-cart {
   bottom: 15px;
   right: 15px;
   background-color: orange;
   padding: 5px;
 }
 @media (min-width: 670px) {
-  body main .featured-products-container .featured-product .fa-cart-shopping {
-    background-color: rgb(212, 37, 104);
+  body main .featured-products-container .featured-product .add-cart {
+    background-color: rgb(84, 101, 248);
     position: absolute;
   }
 }
@@ -167,13 +197,14 @@ body main .featured-products-container .featured-product .fa-cart-shopping {
     width: 25%;
   }
 }
-body footer {
+
+footer {
   font-weight: 300;
   font-size: 11px;
   padding: 30px 40px;
   color: #b0adad;
 }
-body footer a {
+footer a {
   color: #333;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
