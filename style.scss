@@ -199,7 +199,8 @@ body {
       margin-right: auto;
       // text-align: center;
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
 
       h3 {
         text-decoration: underline;
