@@ -13,13 +13,22 @@ for (let i = 0; i < addCart.length; i++) {
     // console.log(addCart[i]);
 };
 
+let totalPrice = 0;
+
+
 function addFunction(e) {
     let itemList = document.getElementById("item-list");
     let priceList = document.getElementById("price-list");
-    let value = e.target.parentNode.querySelector('h3').innerHTML;
+    let value = parseFloat(e.target.parentNode.querySelector('h3').innerHTML);
     let item = e.target.parentNode.querySelector('h5').innerHTML;
+    let total = document.getElementById("aa")
+    console.log(typeof (value));
+    //  let totalPrice = 0;
+
     itemList.innerHTML += `<li>${item}</li>`;
     priceList.innerHTML += `<li>${value}</li>`;
+    totalPrice += value;
+    total.innerHTML = `<li>${totalPrice}</li>`
 
 
 }
@@ -36,5 +45,4 @@ function addFunction(index) {
     console.log("Clicked item index:", index);
 }
 */
-
 
