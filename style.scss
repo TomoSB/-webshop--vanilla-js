@@ -189,7 +189,7 @@ body {
       z-index: 7;
       width: 50%; /* Promijenite širinu na 25% */
       height: 80%; /* Postavite visinu na 100% */
-      background-color: #0adf38;
+      background-color: rgb(201, 199, 199);
       position: fixed;
       padding: 5%;
       left: 0;
@@ -204,6 +204,14 @@ body {
 
       h3 {
         text-decoration: underline;
+      }
+
+      ul,
+      li {
+        text-align: start;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
       }
     }
 

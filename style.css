@@ -142,7 +142,7 @@ body main .total {
   z-index: 7;
   width: 50%; /* Promijenite širinu na 25% */
   height: 80%; /* Postavite visinu na 100% */
-  background-color: #0adf38;
+  background-color: rgb(201, 199, 199);
   position: fixed;
   padding: 5%;
   left: 0;
@@ -156,6 +156,13 @@ body main .total {
 }
 body main .total h3 {
   text-decoration: underline;
+}
+body main .total ul,
+body main .total li {
+  text-align: start;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 body main .featured-products-container {
   display: flex;

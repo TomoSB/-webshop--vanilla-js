@@ -28,10 +28,41 @@ function addFunction(e) {
     itemList.innerHTML += `<li>${item}</li>`;
     priceList.innerHTML += `<li>${value}</li>`;
     totalPrice += value;
-    total.innerHTML = `<li>${totalPrice}</li>`
+    total.innerHTML = `<li>${totalPrice}$</li>`
 
 
 }
+
+
+let kolica = document.getElementById("kolica");
+kolica.addEventListener("click", openCart)
+let kolicaVisibility = true;
+function openCart() {
+
+    if (kolicaVisibility === true) {
+        total.style.visibility = "visible";
+        kolicaVisibility = false;
+
+    }
+    else {
+        total.style.visibility = "hidden";
+        kolicaVisibility = true;
+    };
+
+
+
+
+
+};
+
+
+
+
+
+
+
+
+
 
 
 /*
