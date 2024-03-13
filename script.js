@@ -37,16 +37,19 @@ function addFunction(e) {
 let kolica = document.getElementById("kolica");
 kolica.addEventListener("click", openCart)
 let kolicaVisibility = true;
+total.style.visibility = "hidden";
 function openCart() {
 
-    if (kolicaVisibility === true) {
+    if (kolicaVisibility == true) {
         total.style.visibility = "visible";
         kolicaVisibility = false;
+        console.log("true");
 
     }
     else {
         total.style.visibility = "hidden";
         kolicaVisibility = true;
+        console.log("hidden");
     };
 
 
